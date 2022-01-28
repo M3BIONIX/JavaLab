@@ -11,7 +11,7 @@ class Employee
     }
 }
 
-class Engineer extends Employee
+public class Engineer extends Employee
 {
     void calcSalary()
     {
