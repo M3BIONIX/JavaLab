@@ -13,7 +13,6 @@ public class Employee
     public static void main(String args[])
     {
        
-       
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter the Details of Officer");
         o.input();
@@ -25,12 +24,14 @@ public class Employee
         System.out.println("Enter the department:");
         m.dept=scan.next();
         o.details();
+       
+       
         System.out.print("Salary of officer:");
         o.print_Salary(o.salary);
         m.details();
         System.out.print("Salary of manager:");
         m.print_Salary(m.salary);
-        scan.close();
+       
     }
 
     void input()
@@ -46,14 +47,16 @@ public class Employee
         age=scan.nextInt();
         System.out.printf("Enter the salary : ");
         salary=scan.nextInt();
-        scan.close();
+     
         
     }
-
+    
     void details()
     {
         System.out.println(name+" "+addr+" "+phone+" "+age);
     }
+       
+    
 }
 
 class Officer extends Employee{
