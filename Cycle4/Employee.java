@@ -4,14 +4,15 @@ public class Employee
     String name,addr,phone;
     int age,salary;
     
-    static Officer o=new Officer();
-    static Manager m=new Manager();
+    Officer o=new Officer();
+    Manager m=new Manager();
     void print_Salary(int salary)
     {
         System.out.println(salary);
     }
     public static void main(String args[])
-    {
+    {   Officer o=new Officer();
+        Manager m=new Manager();
        
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter the Details of Officer");
@@ -59,7 +60,7 @@ public class Employee
     
 }
 
-class Officer extends Employee{
+class Officer extends Employee {
    public String specialization;
 }
 
