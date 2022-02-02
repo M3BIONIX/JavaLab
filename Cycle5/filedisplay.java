@@ -5,7 +5,7 @@ public class filedisplay {
     public static void main(String args[]) throws IOException {
        
         BufferedReader fin = new BufferedReader(new FileReader("input.txt"));
-         int countline = 0,countchar=0,countwords=0,ch=0;
+         int countline = 0,countchar=0,countwords=0;
          String line;
          try{
          
