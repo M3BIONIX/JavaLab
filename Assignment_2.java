@@ -3,20 +3,21 @@ import java.sql.*;
 
 public class Assignment_2 {
    
-    static JLabel Text1, Text2,Text3,Name,age,address;
+    static JLabel Text1, Text2,Text3;
+    static JTextField Name,age,address;
     static void Outline(String name, String addr, int age1){
       JFrame frame = new JFrame();
         Text1 = new JLabel("Student Name :");
         Text1.setBounds(20,100,200,30);
-        Name = new JLabel(name);
+        Name = new JTextField(name);
         Name.setBounds(110,100, 200,30);  
         Text2 = new JLabel("Age :");
         Text2.setBounds(80,150,200,30);
-        age = new JLabel(Integer.toString(age1));
+        age = new JTextField(Integer.toString(age1));
         age.setBounds(110,150, 200,30);  
         Text3 = new JLabel("Address :");
         Text3.setBounds(50,200,200,30);
-        address = new JLabel(addr);
+        address = new JTextField(addr);
         address.setBounds(110,200,200,30);
         frame.add(Text1);
         frame.add(Text2);
