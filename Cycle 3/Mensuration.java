@@ -9,7 +9,7 @@ class Mensuration
   Mensuration m=new Mensuration();
   
   int l,b,s;
-  float h;
+  float h,k;
   
   System.out.println("Enter the length:");
   l=sc.nextInt();
@@ -23,8 +23,13 @@ class Mensuration
   System.out.println("Enter the height:");
   h=sc.nextFloat();
   
+  System.out.println("Enter the Radius");
+  k = sc.nextFloat();
+  
+  
   m.Area(l,b);
   m.Area(s,h);
+  m.Area(k);
  }
  
  void Area(int l,int b)
@@ -39,5 +44,10 @@ class Mensuration
   ar=(float)(0.5*s*h);
   
   System.out.println("Area of Triangle is:"+ar);
+ }
+ 
+ void Area(Float k);
+ {
+  System.out.println(k*3.14);
  }
 }
